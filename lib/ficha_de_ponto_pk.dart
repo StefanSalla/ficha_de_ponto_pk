@@ -7,11 +7,11 @@ class Ponto {
   final bool isSaida;
   final DateTime dataHora;
 
-  Ponto({
-    required this.id,
-    required this.nome,
-    required this.imagePath,
-    required this.isSaida,
-    required this.dataHora,
-  });
+  Ponto(
+    this.id,
+    this.nome,
+    this.imagePath,
+    this.isSaida,
+    this.dataHora,
+  );
 }
