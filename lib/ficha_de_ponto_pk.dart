@@ -1,7 +1,17 @@
 library ficha_de_ponto_pk;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+class Ponto {
+  final int id;
+  final String nome;
+  final String imagePath;
+  final bool isSaida;
+  final DateTime dataHora;
+
+  Ponto({
+    required this.id,
+    required this.nome,
+    required this.imagePath,
+    required this.isSaida,
+    required this.dataHora,
+  });
 }
