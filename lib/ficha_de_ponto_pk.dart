@@ -15,7 +15,9 @@ class Ponto {
      this.dataHora,
   );
 
-  static Ponto fromMap(String id,Map<String, dynamic> map){
-    return Ponto( map['id'], map['nome'], map['imagePath'], map['isSaida'], map['dataHora']);
+  static Ponto fromMap(String id, Map<String, dynamic> map){
+    var ponto = Ponto(id, map['nome'], map['imagePath'], map['isSaida'], map['dataHora']);
+     
+    return ponto;
   }
 }
